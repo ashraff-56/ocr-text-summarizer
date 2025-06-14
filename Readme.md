@@ -1,30 +1,33 @@
 OCR Text Summarizer
-A Streamlit web application for extracting text from images using EasyOCR and generating engaging summaries with Google Gemini or a rule-based approach.
-Features
 
-Extract text from images (PNG, JPG, JPEG, BMP, TIFF) using EasyOCR
-Enhance image quality with OpenCV for improved OCR accuracy
-Generate AI-powered summaries with Google Gemini or simple rule-based summaries
-Display OCR analysis with confidence scores and text blocks
-Download extracted text and summaries
+A Streamlit app that extracts text from images using EasyOCR and generates vibrant summaries with Google Gemini or a rule-based approach.
+✨ Features
 
-Project Structure
-├── ocr_text_summarizer/
-│   ├── app.py
-│   ├── config.py
-│   ├── utils/
-│   │   ├── image_processing.py
-│   │   ├── summarization.py
-│   │   └── model_utils.py
-│   ├── requirements.txt
-│   ├── .gitignore
-│   ├── README.md
-│   ├── .streamlit/
-│   │   └── secrets.toml
+📸 Extract text from images (PNG, JPG, JPEG, BMP, TIFF)
+🖌️ Enhance images with OpenCV for better OCR accuracy
+🤖 Generate AI-powered summaries with Google Gemini
+📝 Create concise rule-based summaries
+📊 View OCR analysis with confidence scores
+💾 Download extracted text and summaries
 
-Setup
+📂 Project Structure
 
-Clone the Repository:
+├──ocr_text_summarizer/
+    ├── app.py
+    ├── config.py
+    ├── utils/
+    │   ├── image_processing.py
+    │   ├── summarization.py
+    │   └── model_utils.py
+    ├── requirements.txt
+    ├── .gitignore
+    ├── README.md
+    └── .streamlit/
+        └── secrets.toml
+
+🚀 Setup
+
+Clone Repository:
 git clone https://github.com/ashraff-56/ocr-text-summarizer.git
 cd ocr-text-summarizer
 
@@ -40,8 +43,7 @@ pip install -r requirements.txt
 
 Configure API Key:
 
-Create ocr_text_summarizer/.streamlit/secrets.toml:
-GEMINI_API_KEY = "your-gemini-api-key"
+Create .streamlit/secrets.toml:GEMINI_API_KEY = "your-gemini-api-key"
 
 
 
@@ -52,8 +54,7 @@ streamlit run app.py
 
 
 
-
-Dependencies
+🛠️ Dependencies
 
 streamlit==1.29.0
 opencv-python==4.8.1
@@ -62,9 +63,9 @@ numpy==1.26.2
 google-generativeai==0.8.1
 
 See requirements.txt for details.
-Notes
+📋 Notes
 
-Use clear, high-contrast images for optimal OCR results.
-Ensure a valid Google Gemini API key is set in secrets.
+Use high-contrast images for best OCR results.
+Ensure a valid Gemini API key in secrets.
 
 
